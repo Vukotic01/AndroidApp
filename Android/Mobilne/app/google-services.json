@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "972237981004",
+    "project_id": "mobilneapp-2598d",
+    "storage_bucket": "mobilneapp-2598d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:972237981004:android:98689d8090adc64af13be9",
+        "android_client_info": {
+          "package_name": "com.example.mobilneaplikacije"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwM-csZr3qHug7VdyDYMuknDmFVZVv1fI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

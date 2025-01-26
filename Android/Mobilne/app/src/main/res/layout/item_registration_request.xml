@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/companyNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Company Name"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/ownerEmailTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Owner Email"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/companyEmailTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Company Email"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/statusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/detailsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Details" />
+
+    <LinearLayout
+        android:id="@+id/detailsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:id="@+id/firstNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="First Name"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/lastNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last Name"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/addressTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/phoneTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/companyAddressTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Company Address"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/companyPhoneTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Company Phone"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/companyDescriptionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Company Description"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/workingHoursTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Working Hours" />
+
+        <Button
+            android:id="@+id/approveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Approve" />
+
+        <Button
+            android:id="@+id/rejectButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reject" />
+    </LinearLayout>
+</LinearLayout>

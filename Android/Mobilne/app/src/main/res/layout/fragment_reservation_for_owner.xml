@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:weightSum="2"
+    tools:context=".fragments.ReservationForOwner">
+
+    <!-- Spinner for filtering -->
+    <Spinner
+        android:id="@+id/filterr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp" />
+
+    <!-- First ListView for reservations -->
+    <ListView
+        android:id="@+id/reservationOwnerListView"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_weight="0.7"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        android:paddingBottom="8dp"
+        tools:listitem="@layout/reservation_for_owner_card" />
+
+    <!-- Second ListView for package reservations -->
+    <ListView
+        android:id="@+id/reservationPackageOwnerListView"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_weight="1.3"
+        tools:listitem="@layout/reservation_package_for_owner_card"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        android:paddingTop="8dp" />
+
+</LinearLayout>

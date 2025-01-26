@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:layout_marginBottom="8dp"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    > <!-- Corrected here -->
+
+    <!-- Date to Cancel -->
+    <TextView
+        android:id="@+id/textViewDTC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date to Cancel"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:paddingBottom="8dp"/>
+
+    <!-- Status -->
+    <TextView
+        android:id="@+id/textViewSt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:textSize="16sp"
+        android:paddingBottom="8dp"/>
+
+    <!-- Package Header -->
+    <TextView
+        android:id="@+id/textViewPN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Package Name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingTop="8dp"
+        android:paddingBottom="4dp"/>
+
+    <Button
+        android:id="@+id/buttonCanc"
+        android:layout_width="159dp"
+        android:layout_height="63dp"
+        android:text="Cancle order" />
+
+
+    <ListView
+        android:id="@+id/productsL"
+        android:layout_width="match_parent"
+        android:layout_height="132dp"
+        android:nestedScrollingEnabled="true"
+
+        tools:listitem="@layout/product_cart" />
+
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.EmployeeWorkTimeFragment"
+    android:background="#DCD0FF"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/profilePhoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher_foreground"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="48dp"
+            android:layout_height="25dp"
+            android:text="Ime:" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="61dp"
+            android:layout_height="24dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prezime:" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <!-- Spinner za odabir dana -->
+        <Spinner
+            android:id="@+id/daysSpinner"
+            android:layout_width="407dp"
+            android:layout_height="49dp" />
+
+        <!-- Horizontalni LinearLayout za TimePicker-e -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <!-- TimePicker za izbor vremena početka -->
+            <TimePicker
+                android:id="@+id/startTimeView"
+                android:layout_width="0dp"
+                android:layout_height="327dp"
+                android:layout_weight="1" />
+
+            <!-- TimePicker za izbor vremena kraja -->
+            <TimePicker
+                android:id="@+id/endTimeView"
+                android:layout_width="0dp"
+                android:layout_height="327dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <!-- Button -->
+        <Button
+            android:id="@+id/eventButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Events" />
+
+    </LinearLayout>
+</FrameLayout>

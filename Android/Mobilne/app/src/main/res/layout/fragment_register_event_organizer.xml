@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCD0FF"
+    tools:context=".fragments.RegisterEventOrganizerFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Register as event organizer"
+            android:textSize="16sp"
+            android:textColor="#808080"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp" />
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="350dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:layout_gravity="center_horizontal"
+            android:padding="8dp"
+            android:background="@drawable/round_edit_text"
+            android:hint="Email" />
+
+        <!-- Password -->
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="350dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:padding="8dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/round_edit_text"
+            android:hint="Password"
+            android:inputType="textPassword"/>
+
+        <!-- Password second time -->
+        <EditText
+            android:id="@+id/repeatPasswordEditText"
+            android:layout_width="350dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:padding="8dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/round_edit_text"
+            android:hint="Repeat password"
+            android:inputType="textPassword"/>
+
+        <!-- Name -->
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="350dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:padding="8dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/round_edit_text"
+            android:hint="Name"/>
+
+        <!-- Surname -->
+        <EditText
+            android:id="@+id/surnameEditText"
+            android:layout_width="350dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:padding="8dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/round_edit_text"
+            android:hint="Surname"/>
+
+
+        <!-- Address -->
+        <EditText
+            android:id="@+id/addressEditText"
+            android:layout_width="350dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:padding="8dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/round_edit_text"
+            android:hint="Address"/>
+
+        <!-- Phone Number -->
+        <EditText
+            android:id="@+id/phoneEditText"
+            android:layout_width="350dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:padding="8dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/round_edit_text"
+            android:hint="Phone Number"
+            android:inputType="phone"/>
+
+        <!-- Profile Picture ImageView -->
+        <ImageView
+            android:id="@+id/imageViewProfilePicture"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/default_profile_picture"
+            android:layout_gravity="center_horizontal"/>
+
+        <!-- Button to Choose Profile Picture -->
+        <Button
+            android:id="@+id/buttonChoosePicture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Choose Profile Image" />
+
+
+        <!-- Register Button -->
+        <Button
+            android:id="@+id/buttonRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Register" />
+    </LinearLayout>
+
+</FrameLayout>

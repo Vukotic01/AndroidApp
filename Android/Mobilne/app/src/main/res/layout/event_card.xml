@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCD0FF"
+    >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/calDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/workingHours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Working hours"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/eventStartTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Start Time"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/eventEndTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="End Time"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/eventType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Event Type"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/eventStatuss"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Event Status"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+</LinearLayout>

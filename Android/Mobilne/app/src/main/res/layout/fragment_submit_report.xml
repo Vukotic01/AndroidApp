@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.SubmitReportFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Textbox for Comment -->
+        <EditText
+            android:id="@+id/editReportReason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter report reason"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:maxLines="5"
+            android:gravity="top|start"
+            android:padding="8dp"
+            android:background="@drawable/common_google_signin_btn_text_light_normal_background" />
+
+        <!-- Submit Button -->
+
+        <Button
+            android:id="@+id/buttonSubmitReport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Submit" />
+    </LinearLayout>
+
+</FrameLayout>

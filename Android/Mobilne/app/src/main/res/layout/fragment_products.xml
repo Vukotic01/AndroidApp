@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editTextProductName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Product Name" />
+
+        <EditText
+            android:id="@+id/editTextProductDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Product Description" />
+
+        <EditText
+            android:id="@+id/editTextProductPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Price"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/editTextProductDiscount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Discount"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/editTestPriceWithDiscount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Price with discount"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/editTextProductCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Category" />
+
+        <EditText
+            android:id="@+id/editTextProductSubCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="SubCategory" />
+
+        <EditText
+            android:id="@+id/editTextProductImages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Images (comma separated URLs)" />
+
+        <EditText
+            android:id="@+id/editTextProductEventTypes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Event Types (comma separated)" />
+
+        <Button
+            android:id="@+id/buttonAddProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Product" />
+    </LinearLayout>
+</ScrollView>

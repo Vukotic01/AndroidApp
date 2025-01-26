@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_registration_requests"
+        android:icon="@drawable/ic_arrow"
+        android:title="Registration requests" />
+    <item
+        android:id="@+id/nav_categories"
+        android:icon="@drawable/ic_arrow"
+        android:title="Categories" />
+    <item
+        android:id="@+id/nav_event_types"
+        android:icon="@drawable/ic_arrow"
+        android:title="Event types" />
+    <item
+        android:id="@+id/nav_reports"
+        android:icon="@drawable/ic_arrow"
+        android:title="Reports" />
+    <item
+        android:id="@+id/nav_logout"
+        android:title="Logout"
+        android:orderInCategory="100" />
+</menu>

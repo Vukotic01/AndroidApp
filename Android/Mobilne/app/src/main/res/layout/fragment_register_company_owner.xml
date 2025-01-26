@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCD0FF"
+    tools:context=".fragments.RegisterCompanyOwnerFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Section Title: Personal Information -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Personal Information"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#808080"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Fields: Email, Password, Repeat Password, Name, Surname, Address, Phone Number -->
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:padding="8dp"
+            android:background="@drawable/round_edit_text"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:padding="8dp"
+            android:background="@drawable/round_edit_text"
+            android:hint="Password"
+            android:inputType="textPassword"/>
+
+        <EditText
+            android:id="@+id/editTextRepeatPassword"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:padding="8dp"
+            android:background="@drawable/round_edit_text"
+            android:hint="Repeat password"
+            android:inputType="textPassword"/>
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:padding="8dp"
+            android:background="@drawable/round_edit_text"
+            android:hint="Name"/>
+
+        <EditText
+            android:id="@+id/editTextSurname"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:padding="8dp"
+            android:background="@drawable/round_edit_text"
+            android:hint="Surname"/>
+
+        <EditText
+            android:id="@+id/editTextAddress"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:padding="8dp"
+            android:background="@drawable/round_edit_text"
+            android:hint="Address"/>
+
+        <EditText
+            android:id="@+id/editTextPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:padding="8dp"
+            android:background="@drawable/round_edit_text"
+            android:hint="Phone Number"
+            android:inputType="phone"/>
+
+        <!-- Profile Picture Selection -->
+        <ImageView
+            android:id="@+id/imageViewProfilePicture"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/default_profile_picture"
+            android:layout_gravity="center_horizontal"/>
+
+        <Button
+            android:id="@+id/buttonChoosePicture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Profile Image"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp" />
+
+        <!-- Section Title: Company Information -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Company Information"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#808080"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Fields: Company Name, Email, Address, Phone Number, Description -->
+        <EditText
+            android:id="@+id/editTextCompanyName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:padding="8dp"
+            android:background="@drawable/round_edit_text"
+            android:hint="Company Name" />
+
+        <EditText
+            android:id="@+id/editTextCompanyEmail"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:padding="8dp"
+            android:background="@drawable/round_edit_text"
+            android:hint="Company Email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/editTextCompanyAddress"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:padding="8dp"
+            android:background="@drawable/round_edit_text"
+            android:hint="Company Address" />
+
+        <EditText
+            android:id="@+id/editTextCompanyPhone"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:padding="8dp"
+            android:background="@drawable/round_edit_text"
+            android:hint="Company Phone"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/editTextCompanyDescription"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:padding="8dp"
+            android:background="@drawable/round_edit_text"
+            android:hint="Company Description" />
+
+        <!-- Section Title: Categories -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Categories"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#808080"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Category Fields -->
+        <LinearLayout
+            android:id="@+id/categoriesLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+        <!-- Section Title: Event Types -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Event Types"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#808080"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Event Types Checkboxes -->
+        <LinearLayout
+            android:id="@+id/eventTypesLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+        <!-- Section Title: Working Hours -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Working Hours"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#808080"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Working Hours Fields -->
+        <LinearLayout
+            android:id="@+id/workingHoursLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Dugme za dodavanje uzoraka -->
+        <Button
+            android:id="@+id/buttonAddSample"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Sample"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp" />
+    </LinearLayout>
+</ScrollView>

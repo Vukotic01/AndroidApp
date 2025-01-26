@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewCategoryName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category Name"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewCategoryDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category Description"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/buttonToggleSubcategoryForm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Subcategory" />
+
+    <LinearLayout
+        android:id="@+id/subcategoryForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/editTextSubcategoryName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Subcategory Name" />
+
+        <EditText
+            android:id="@+id/editTextSubcategoryDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Subcategory Description" />
+
+        <Button
+            android:id="@+id/buttonAddSubcategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Subcategory" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewSubcategories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>

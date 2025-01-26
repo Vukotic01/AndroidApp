@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    >
+
+    <!-- Prikaz osnovnih informacija o rezervaciji -->
+    <TextView
+        android:id="@+id/textViewProductStatus2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvPackageName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Package Name"
+        android:textSize="14sp"
+        android:layout_marginBottom="4dp" />
+
+    <TextView
+        android:id="@+id/tvPackageDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Package Description"
+        android:textSize="14sp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Prikaz liste produkata u paketu -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Products in Package:"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp" />
+
+    <ListView
+        android:id="@+id/lvProducts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:nestedScrollingEnabled="true"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        tools:listitem="@layout/product_cart"
+
+
+        />
+
+
+
+
+
+
+</LinearLayout>
